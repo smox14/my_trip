@@ -1,0 +1,9 @@
+<header>
+  <h1><%= trip_info['trip_name']%></h1>
+  <h3><%= trip_info['from_date']%> to <%= trip_info['to_date']%> </h3>
+</header>
+
+<main>
+    <h2>Places to visit</h2>
+    <a href="/<%= trip_info['id']%>/places"> <button>add</button> </a>
+</main>

@@ -1,13 +1,45 @@
 <!doctype html>
 <html lang="en">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/99008ce47c.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <title>Hello World</title>
   <link rel='stylesheet' href='/stylesheets/main.css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
+  <header>
+    <% if signed_in? %>
+        <!--<h3><%= current_user()['username']%></h3>
+        <form action="/sessions" method="POST">
+            <input type="hidden" name='_method' value="delete">
+            <button>Logout</button>
+        </form> -->
+        <div class="dropdown">
+          <button class="dropbtn">Hi <%= current_user()['username']%></button>
+          <div class="dropdown-content">
+            <form action="/trips/new" method="get">
+              <input type="submit" value="Add new trip" />
+            </form>
+            <form action="/trips" method="get">
+              <input type="submit" value="My trips" />
+            </form>
+            <form action="/sessions" method="POST">
+              <input type="hidden" name='_method' value="delete"> 
+              <input type="submit" value="Sign out">
+            </form>
+          </div>
+        </div>
+    <% else %>
+      <div class="dropdown">
+        <button class="dropbtn"> <a href="/sign-in">Sign in</a> </button>
+      </div>
+    <% end %>
+  </header>
   <%= yield %>
 
 </body>

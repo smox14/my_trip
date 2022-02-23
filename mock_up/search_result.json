@@ -1,0 +1,1019 @@
+{
+   "html_attributions": [],
+   "next_page_token": "Aap_uECnlWg0X_vpk470JWmEgig8f-vBV5f4LnL-4RvTQAgpvvMelYaSz4F3SYgmzHyxO6j5s_4Z-4xKqnkoJmEgows2j8fEuEMBCLI2btkT2qRuLVr9qDTEu29FJdaFV1jsuuN9X30yerZjtec9qNGqV6lUnUFl5OAMDv3hd9GckMYUQfX-YEO-aiT_fCm0zET7A8s5bTEmNr1qaU0Wk78pWD9-uI3nWE7JykK-Pr60FFke1z_v5Bpx5B6JTD1T0Lbe9Q7m2xaiYoGeS4ki9O-vVNKeecFu9kt-_X-r8cN6dhZcCOYq0DVjltTwRi1KOvFOAVIDCXU7RkPUlv_h1wwdk-EsHl4txmTgHV5KzAB0PGj4iK8VPIoWYpsqr6apwpNyoSUM3L0QUt_eJeSWU3SvQC83It0",
+   "results": [
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "Na Phra Lan Rd, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7498558,
+   "lng": 100.4915765
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.75120562989272,
+   "lng": 100.4929263298927
+   },
+   "southwest": {
+   "lat": 13.74850597010728,
+   "lng": 100.4902266701073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+   "icon_background_color": "#13B5C7",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+   "name": "The Royal Grand Palace",
+   "opening_hours": {
+   "open_now": false
+   },
+   "photos": [
+   {
+   "height": 446,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/101006971244290159648\">A Google User</a>"
+   ],
+   "photo_reference": "Aap_uEBtLHTQk2GAZeP_uGlXULYwgisNZvnYn4cOiny7d6QjMyDiH09sZfhKhYCMCprE5auvsw9AcX0bEj6RWXBvwZG_o6MAWgTqjofXa6D1LFxuebcqOMMZeUh0F36VmTCSgN2_7hYw6SiNOxGhjdlsCo58TwBZmRayzVnvZ22BX30dAPFT",
+   "width": 669
+   }
+   ],
+   "place_id": "ChIJPzZsMU6Z4jARQUzvk913bCo",
+   "plus_code": {
+   "compound_code": "PFXR+WJ Bangkok, Thailand",
+   "global_code": "7P52PFXR+WJ"
+   },
+   "rating": 4.5,
+   "reference": "ChIJPzZsMU6Z4jARQUzvk913bCo",
+   "types": [
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 38592
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "Na Phra Lan Rd, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7516435,
+   "lng": 100.4927041
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.75340522989272,
+   "lng": 100.49489055
+   },
+   "southwest": {
+   "lat": 13.75070557010728,
+   "lng": 100.48993915
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_dharma-71.png",
+   "icon_background_color": "#7B9EB0",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+   "name": "Temple of the Emerald Buddha - Wat Phra Si Rattana Satsadaram / Wat Phra Kaew",
+   "opening_hours": {
+   "open_now": false
+   },
+   "photos": [
+   {
+   "height": 3024,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/112520277959381537530\">A Google User</a>"
+   ],
+   "photo_reference": "Aap_uEBBDdTTvvgMyVFLy5Yv7CorVYWHT32duks0sHt9mFAq5mYluWRFWKguvCG176t9zZxFSuyPcBp4Uoep4swKvcMvlhr8jKIcCKAMMetUFo6n38K4eHWkZ5x_bP4vxxDduGmOkR-tqZ5NeocZ60bjEaETx9YnYE6ad8csv1jWKdteWrJG",
+   "width": 4032
+   }
+   ],
+   "place_id": "ChIJ5Wl37g6Z4jARiP4itarBPDQ",
+   "plus_code": {
+   "compound_code": "QF2V+M3 Bangkok, Thailand",
+   "global_code": "7P52QF2V+M3"
+   },
+   "rating": 4.6,
+   "reference": "ChIJ5Wl37g6Z4jARiP4itarBPDQ",
+   "types": [
+   "tourist_attraction",
+   "place_of_worship",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 21536
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "192 Witthayu Rd, Lumphini, Pathum Wan District, Bangkok 10330, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7314028,
+   "lng": 100.5414395
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.73805425,
+   "lng": 100.5499274
+   },
+   "southwest": {
+   "lat": 13.72294925,
+   "lng": 100.532947
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+   "icon_background_color": "#4DB546",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+   "name": "Lumphini Park",
+   "opening_hours": {
+   "open_now": true
+   },
+   "photos": [
+   {
+   "height": 6936,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/116257221097152416344\">Lukáš Nebohý</a>"
+   ],
+   "photo_reference": "Aap_uEBRlGCNOnL2ScSNTzCp_yaRmL2pC5DcwQ-Qnt_pzXmXWi2VSNxSn1OsLRQVJ4N2z2LXTfpYxpMjhpEJ5V-yxXDoUJL4jZrQHtbEYwbXl_DWWMwkxjs4SAUTS9qlRpVmQO6WzuBXNuztbUDL9yikLNVa9WSKhMnLbDGYzSsv59z6oQs8",
+   "width": 9248
+   }
+   ],
+   "place_id": "ChIJG7BL7Saf4jARNmn5AQiyAaw",
+   "plus_code": {
+   "compound_code": "PGJR+HH Bangkok, Thailand",
+   "global_code": "7P52PGJR+HH"
+   },
+   "rating": 4.5,
+   "reference": "ChIJG7BL7Saf4jARNmn5AQiyAaw",
+   "types": [
+   "park",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 28132
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "2 Maha Chai Rd, Wat Bowon Niwet, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7548169,
+   "lng": 100.5041554
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.75620177989273,
+   "lng": 100.5053881298927
+   },
+   "southwest": {
+   "lat": 13.75350212010728,
+   "lng": 100.5026884701073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_dharma-71.png",
+   "icon_background_color": "#7B9EB0",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+   "name": "Wat Ratchanatdaram Worawihan (Loha Prasat)",
+   "opening_hours": {
+   "open_now": false
+   },
+   "photos": [
+   {
+   "height": 3456,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/107463591213858001820\">Rote Kayoonvanit</a>"
+   ],
+   "photo_reference": "Aap_uEBZsGR1fLt3P3WR3nyt4_wnEAaekml6lURj6rK5CeeEbspufdirH1KdRAWLw1b0TQcRzoWFyF0WCYp2tgXF8vAr37bEe3p6jAvDu4QsITAg7AmCnEBQQeWT0tXgOJdlDg6k6RpjGD7mlrcXKvkIsC2MTwo68jSNoFJI5ityQrL8OHud",
+   "width": 4608
+   }
+   ],
+   "place_id": "ChIJYTbBTBSZ4jARYTUWfRRhB8I",
+   "plus_code": {
+   "compound_code": "QG33+WM Bangkok, Thailand",
+   "global_code": "7P52QG33+WM"
+   },
+   "rating": 4.7,
+   "reference": "ChIJYTbBTBSZ4jARYTUWfRRhB8I",
+   "types": [
+   "tourist_attraction",
+   "place_of_worship",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 2082
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "309 Soi Phet Kasem 28, Khuha Sawan, Phasi Charoen, Bangkok 10160, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7312977,
+   "lng": 100.4632778
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.73264752989272,
+   "lng": 100.4646276298927
+   },
+   "southwest": {
+   "lat": 13.72994787010728,
+   "lng": 100.4619279701073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+   "icon_background_color": "#13B5C7",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+   "name": "The Artist's House",
+   "opening_hours": {
+   "open_now": false
+   },
+   "photos": [
+   {
+   "height": 541,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/112750975122814824441\">A Google User</a>"
+   ],
+   "photo_reference": "Aap_uEDjDt2jgbEo4p8k3KRVXxbpXgdC520muYBGHxmen2fq-G45_N5Y9AthkhZTrApJdfbqoJ-8mkvZTwZFdBEQzrvcIKMKwQW1-In2Npq20Szeszag1dEDep2S5iFiKQul5wXGQDLQw_sP7Gg2tJn1EoixIqYbhlkxNof-cLZEiO8KuVfs",
+   "width": 960
+   }
+   ],
+   "place_id": "ChIJF6uVAzt9HTEROKM0WKZMU7M",
+   "plus_code": {
+   "compound_code": "PFJ7+G8 Bangkok, Thailand",
+   "global_code": "7P52PFJ7+G8"
+   },
+   "rating": 4.5,
+   "reference": "ChIJF6uVAzt9HTEROKM0WKZMU7M",
+   "types": [
+   "tourist_attraction",
+   "art_gallery",
+   "cafe",
+   "food",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 978
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "Na Phra That Alley, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7580779,
+   "lng": 100.4917077
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.75914797989272,
+   "lng": 100.4935446298927
+   },
+   "southwest": {
+   "lat": 13.75644832010728,
+   "lng": 100.4908449701073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+   "icon_background_color": "#13B5C7",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+   "name": "National Museum Bangkok",
+   "opening_hours": {
+   "open_now": false
+   },
+   "photos": [
+   {
+   "height": 3024,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/113791576654727070720\">大内圭</a>"
+   ],
+   "photo_reference": "Aap_uEA1HZO3qrwhvUr9pspte-yWT_dP3ZNtfjqjQKr3ZLS-GHCtD4XfLcaSpfRQUdue4TJzDLm1bEfj4JJOBLW_WvmHYxTOmecmVZ_DgQ3zYnVVts0JOtAZVCcFfscScyYMd3bGDUbATyJgMLAfxM2y-ejdqdrps4jwjSZU6ioXpLr16nGz",
+   "width": 4032
+   }
+   ],
+   "place_id": "ChIJbXZLwgyZ4jARO_0Exd6l_lU",
+   "plus_code": {
+   "compound_code": "QF5R+6M Bangkok, Thailand",
+   "global_code": "7P52QF5R+6M"
+   },
+   "rating": 4.5,
+   "reference": "ChIJbXZLwgyZ4jARO_0Exd6l_lU",
+   "types": [
+   "museum",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 4031
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "Lak Muang Rd, Khwaeng Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7525651,
+   "lng": 100.4940402
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.75411177989272,
+   "lng": 100.4952448798927
+   },
+   "southwest": {
+   "lat": 13.75141212010728,
+   "lng": 100.4925452201073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+   "icon_background_color": "#7B9EB0",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+   "name": "Bangkok City Pillar Shrine",
+   "opening_hours": {
+   "open_now": false
+   },
+   "photos": [
+   {
+   "height": 12000,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/106631302926393887401\">Tim Romack</a>"
+   ],
+   "photo_reference": "Aap_uECYCjWkyzapKo13hSFsWpN8fM4WhAnNIDhrwjmZGwZuxptpEa7UpPC7qU8YAztt1E-sxPlEU6e4WQCd6oQ4MLTFC4Z-NC8-snbh-OFMVkJtJIpO50QieYv12Lf9a-rMEac_KgQCd8oYw8RdZMWycXK85H7lW6acc5UY1iszzGW7A1Jm",
+   "width": 9000
+   }
+   ],
+   "place_id": "ChIJbxEMbg6Z4jARJ7AV6fSNNeU",
+   "plus_code": {
+   "compound_code": "QF3V+2J Bangkok, Thailand",
+   "global_code": "7P52QF3V+2J"
+   },
+   "rating": 4.7,
+   "reference": "ChIJbxEMbg6Z4jARJ7AV6fSNNeU",
+   "types": [
+   "tourist_attraction",
+   "place_of_worship",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 5232
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "Ratchadamnoen Ave, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7564887,
+   "lng": 100.4933612
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.75754517989272,
+   "lng": 100.4946309798927
+   },
+   "southwest": {
+   "lat": 13.75484552010728,
+   "lng": 100.4919313201073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+   "icon_background_color": "#4DB546",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+   "name": "Sanam Luang",
+   "opening_hours": {},
+   "photos": [
+   {
+   "height": 3265,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/103735465252008345784\">A Google User</a>"
+   ],
+   "photo_reference": "Aap_uEDJgA3dJ183jJP_Km0y--p3HvQE9ZTKF5hNhmHM_rnGO6tk9OWB3tHJwn8N0FCdloO1dDrJG_WY-u7UGg_kxo5Njf0aSb6JCNemPyrbzG_AbrAU2zk5kY-dO3UoaRAX7ArRWk7AsZSk-XgDfE7VYYl5UOto-411ZIp6f2Dfe9yyPUu5",
+   "width": 4898
+   }
+   ],
+   "place_id": "ChIJ-WOptA2Z4jARRFoeZFcz_Gk",
+   "plus_code": {
+   "compound_code": "QF4V+H8 Bangkok, Thailand",
+   "global_code": "7P52QF4V+H8"
+   },
+   "rating": 4.6,
+   "reference": "ChIJ-WOptA2Z4jARRFoeZFcz_Gk",
+   "types": [
+   "tourist_attraction",
+   "park",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 18457
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "Maha Chai Rd, Khwaeng Wat Bowon Niwet, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7556156,
+   "lng": 100.5055074
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.75695267989272,
+   "lng": 100.5067413798927
+   },
+   "southwest": {
+   "lat": 13.75425302010728,
+   "lng": 100.5040417201073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+   "icon_background_color": "#7B9EB0",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+   "name": "Mahakan Fort",
+   "opening_hours": {
+   "open_now": true
+   },
+   "photos": [
+   {
+   "height": 672,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/102846723409177483670\">David Will</a>"
+   ],
+   "photo_reference": "Aap_uEA8UaV81aOUXGtPHsMVzwI5gxpdZ9X6xIRW75ELb0i96YV_yWNgsS-urMVaBXlQARBxyQ2DQrwlMsB7h9wTcdRPO1CVzyng1QYOw3t5_FRbZyJsJNFymm3US5yvrqLpT1Qv7DUbvd-oyi1_MgRiZ3KaD03cBUsxP5rEVN6otiHZEPWI",
+   "width": 1000
+   }
+   ],
+   "place_id": "ChIJvRrYdxWZ4jARp3JWoSGK8Wo",
+   "plus_code": {
+   "compound_code": "QG44+66 Bangkok, Thailand",
+   "global_code": "7P52QG44+66"
+   },
+   "rating": 4.3,
+   "reference": "ChIJvRrYdxWZ4jARp3JWoSGK8Wo",
+   "types": [
+   "tourist_attraction",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 225
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "158 Thanon Wang Doem, Wat Arun, Bangkok Yai, Bangkok 10600, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7442236,
+   "lng": 100.488571
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.74566187989272,
+   "lng": 100.4897267
+   },
+   "southwest": {
+   "lat": 13.74296222010728,
+   "lng": 100.4864835
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_dharma-71.png",
+   "icon_background_color": "#7B9EB0",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+   "name": "Wat Arun",
+   "opening_hours": {
+   "open_now": false
+   },
+   "photos": [
+   {
+   "height": 8002,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/106299977930698893609\">Tan PT</a>"
+   ],
+   "photo_reference": "Aap_uEDFUvvO2OVsJezUVNxby9pixt_Ih5pIWzSuBuYPdw85yXOCjD5QJkDW9_5DZCLY-9W8Vk2Nzek3xOjsEW640AXy9y-2X4JxbEQ-BdW1zk__A7RJEwFZBxOSAvjO_d9hA35K35tz_yLM1ab6W6AHS2S1PtrmeOe84EcKcr1CvICJd_vx",
+   "width": 11996
+   }
+   ],
+   "place_id": "ChIJaSv_6gaZ4jARnbiUVn6Z_YY",
+   "plus_code": {
+   "compound_code": "PFVQ+MC Bangkok, Thailand",
+   "global_code": "7P52PFVQ+MC"
+   },
+   "rating": 4.6,
+   "reference": "ChIJaSv_6gaZ4jARnbiUVn6Z_YY",
+   "types": [
+   "place_of_worship",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 28288
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "2 Lan Luang Rd, Wat Sommanat, Pom Prap Sattru Phai, Bangkok 10100, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7560987,
+   "lng": 100.5064773
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.75757972989272,
+   "lng": 100.5078275798927
+   },
+   "southwest": {
+   "lat": 13.75488007010728,
+   "lng": 100.5051279201073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+   "icon_background_color": "#13B5C7",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+   "name": "King Prajadhipok Museum",
+   "opening_hours": {
+   "open_now": false
+   },
+   "photos": [
+   {
+   "height": 3464,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/114998833539742063818\">Mitsunori Yokoyama</a>"
+   ],
+   "photo_reference": "Aap_uEAP_MarPMxQYS_-triaP86hm3xV1sIUINb5RhjnQX4cfX0HO_9McDzDomHxO06aRcPCwIWkRAzB1HJ2w37C99Fvw3NbsE_EvK13Dn5ryQOdGAkz_tJXnGFjC_za86blW5zbXe05bMY8SZtN9-SV4_sWQEof_MKuxRF9-RBJwOmwP9Ol",
+   "width": 4618
+   }
+   ],
+   "place_id": "ChIJQ5p2ehWZ4jARGmpX6vHMs5k",
+   "plus_code": {
+   "compound_code": "QG44+CH Bangkok, Thailand",
+   "global_code": "7P52QG44+CH"
+   },
+   "rating": 4.6,
+   "reference": "ChIJQ5p2ehWZ4jARGmpX6vHMs5k",
+   "types": [
+   "tourist_attraction",
+   "museum",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 350
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "Chaloem Phrakiat Ratchakan Thi 9 Rd, เเขวง หนองบอน Prawet, Bangkok 10250, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.6881362,
+   "lng": 100.6581362
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.68947607989272,
+   "lng": 100.6594845798927
+   },
+   "southwest": {
+   "lat": 13.68677642010728,
+   "lng": 100.6567849201073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+   "icon_background_color": "#4DB546",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+   "name": "Suan Luang Rama IX",
+   "opening_hours": {
+   "open_now": true
+   },
+   "photos": [
+   {
+   "height": 2448,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/109494256454478603251\">Rathakarn Khuruthiti</a>"
+   ],
+   "photo_reference": "Aap_uEB3K1_-byyB77SeEsdWeuQbxyxASxTw3LGVhIL2Ho7sgMu38cYYS3uwzqVavafPsX2e7KrDXUTpQ5Kj0nDrdfJGINymfhhblWCokeXcbFGLJniAZw9rt42X-3uRdxhaT0D2S3dETx9_fPLtveTdLUJGk3Xua_G_Bzb1g36ibpXHGAVg",
+   "width": 3264
+   }
+   ],
+   "place_id": "ChIJu1mpMZRgHTERRNTicTdIHxg",
+   "plus_code": {
+   "compound_code": "MMQ5+77 Bangkok, Thailand",
+   "global_code": "7P52MMQ5+77"
+   },
+   "rating": 4.7,
+   "reference": "ChIJu1mpMZRgHTERRNTicTdIHxg",
+   "types": [
+   "tourist_attraction",
+   "park",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 12414
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "สยามดิสคัฟเวอรี่, 989 Rama I Rd, Pathum Wan, Pathum Wan District, Bangkok 10330, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.746418,
+   "lng": 100.531671
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.74790127989272,
+   "lng": 100.5331998798927
+   },
+   "southwest": {
+   "lat": 13.74520162010728,
+   "lng": 100.5305002201073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+   "icon_background_color": "#13B5C7",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+   "name": "Madame Tussauds Museum BANGKOK",
+   "opening_hours": {
+   "open_now": true
+   },
+   "photos": [
+   {
+   "height": 6000,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/103478463156096160635\">APILUCK HIRUNSI</a>"
+   ],
+   "photo_reference": "Aap_uEBuGGMVTF4RY-L1CVIptYooXUG2vnIJ1k6d37-NdglBF0Cy8rtsawYV9vCp1UV_t_iI5R_tKwTQEuZVCm337qBXkzqAekW4r7UtpgHqdb0l9xd3K5uSOPgWSjrvHOyO5AJf1VodkUPLxDRjKvy1-ZMep2qQkfPwDuS-F68xMSOwLj8-",
+   "width": 4000
+   }
+   ],
+   "place_id": "ChIJHQcCZM2e4jARaESgxhA9-HM",
+   "plus_code": {
+   "compound_code": "PGWJ+HM Bangkok, Thailand",
+   "global_code": "7P52PGWJ+HM"
+   },
+   "rating": 4.5,
+   "reference": "ChIJHQcCZM2e4jARaESgxhA9-HM",
+   "types": [
+   "museum",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 6311
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "423 Charoen Krung Rd, Pom Prap, Pom Prap Sattru Phai, Bangkok 10100, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7429042,
+   "lng": 100.5092772
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.74464482989272,
+   "lng": 100.5105652298927
+   },
+   "southwest": {
+   "lat": 13.74194517010728,
+   "lng": 100.5078655701073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_dharma-71.png",
+   "icon_background_color": "#7B9EB0",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+   "name": "Wat Mangkon Kamalawat (Wat Leng Noei Yi)",
+   "opening_hours": {
+   "open_now": true
+   },
+   "photos": [
+   {
+   "height": 3024,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/112468270695850530586\">Boonchai Mekhuang</a>"
+   ],
+   "photo_reference": "Aap_uEBdUb1pK2fh70_RGYEHtT5t13eNMpaK6kNtCcp5lyVm_Uz1cF6ubk3pB5jq8ICydwqsljbQW6KRdwTR-TJGglhR_g3cNO1uLpTh8_xviarhRI7XtgzyNXmT4-YDdwAKQqsCZlfFV3GBni3UVwutBUCHfePeVkyX1KMOj4FGvY-5P7jM",
+   "width": 4032
+   }
+   ],
+   "place_id": "ChIJZ-IlRCKZ4jARzgWVA3vA_0k",
+   "plus_code": {
+   "compound_code": "PGV5+5P Bangkok, Thailand",
+   "global_code": "7P52PGV5+5P"
+   },
+   "rating": 4.5,
+   "reference": "ChIJZ-IlRCKZ4jARzgWVA3vA_0k",
+   "types": [
+   "tourist_attraction",
+   "place_of_worship",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 10396
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "100 Ratchadamnoen Klang Rd, Wat Bowon Niwet, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7558541,
+   "lng": 100.5038224
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.75735827989272,
+   "lng": 100.5052119298927
+   },
+   "southwest": {
+   "lat": 13.75465862010728,
+   "lng": 100.5025122701073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+   "icon_background_color": "#13B5C7",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+   "name": "Rattanakosin Exhibition Hall",
+   "opening_hours": {
+   "open_now": false
+   },
+   "photos": [
+   {
+   "height": 2988,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/112347546590796214861\">Songcharoen</a>"
+   ],
+   "photo_reference": "Aap_uEAtB3E6s1U2zHG6MpMFSKb6hvlFLL9HSf1FNf0i6a_0zaL5JMJyyZSrQvaTx0Xer-V3ICNfpTj48AAhS8aRD4PIMLKWXDs8JO-mXRH7nLp5M3F3i-vT051Q4iOhjxCG73qeA5mTP5e-BLaAs7ewvi55qy9wyPI7-ZrZRWIQlt6Gv_1R",
+   "width": 5312
+   }
+   ],
+   "place_id": "ChIJGe2dNRSZ4jARXs-hTwCQmFI",
+   "plus_code": {
+   "compound_code": "QG43+8G Bangkok, Thailand",
+   "global_code": "7P52QG43+8G"
+   },
+   "rating": 4.6,
+   "reference": "ChIJGe2dNRSZ4jARXs-hTwCQmFI",
+   "types": [
+   "museum",
+   "tourist_attraction",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 1981
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "2 Sanam Chai Rd, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7466078,
+   "lng": 100.4931179
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.74808605,
+   "lng": 100.4956588
+   },
+   "southwest": {
+   "lat": 13.74485665,
+   "lng": 100.4897236
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+   "icon_background_color": "#7B9EB0",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+   "name": "Wat Phra Chetuphon (Wat Pho)",
+   "opening_hours": {
+   "open_now": false
+   },
+   "photos": [
+   {
+   "height": 4000,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/102301700135125585083\">Max B</a>"
+   ],
+   "photo_reference": "Aap_uEAt7ubZ_mXLBcJiBzPqumgTXuvlzisLSV6qQBjPLCCUMeWwpWG_AKqxQOOrFutfjl6ZgEg3WhJlA2X-k0pT0XrmVQ9CWVjVzcEnRU9_3-X2lgd4mYBSd60broJkGPvk1fWGikXRJh29xlTqvGk52tHhmkhwXGwfNJ6W5kOAQzEsbEur",
+   "width": 6000
+   }
+   ],
+   "place_id": "ChIJgcxFcQWZ4jARLsIR9Qia9H0",
+   "plus_code": {
+   "compound_code": "PFWV+J6 Bangkok, Thailand",
+   "global_code": "7P52PFWV+J6"
+   },
+   "rating": 4.6,
+   "reference": "ChIJgcxFcQWZ4jARLsIR9Qia9H0",
+   "types": [
+   "place_of_worship",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 24227
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "101 Ratchadamnoen Klang Rd, Wat Bowon Niwet, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7565268,
+   "lng": 100.5051546
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.75783942989272,
+   "lng": 100.5063784298927
+   },
+   "southwest": {
+   "lat": 13.75513977010728,
+   "lng": 100.5036787701073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+   "icon_background_color": "#7B9EB0",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+   "name": "The Queen's Gallery",
+   "opening_hours": {
+   "open_now": true
+   },
+   "photos": [
+   {
+   "height": 4248,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/112111965687277054102\">A Google User</a>"
+   ],
+   "photo_reference": "Aap_uEBmTP7y3NK7bXGzqCSNDzzXU9X7onWmrGTuKD2TS-CsbC2_yBnPy95RiHlWLotg57icdYajOvJ-O84ot6qdsDf9FgIdEXI4U0r0VV6bMYlbwAmDiahgKKyK8wFwNp_W8jQIvV7bjdeLat313ugFki7HSZMoOwt6vKDUQn428ZOmkfnr",
+   "width": 5664
+   }
+   ],
+   "place_id": "ChIJW6dIDhWZ4jARS2gURqMBgH4",
+   "plus_code": {
+   "compound_code": "QG44+J3 Bangkok, Thailand",
+   "global_code": "7P52QG44+J3"
+   },
+   "rating": 4.5,
+   "reference": "ChIJW6dIDhWZ4jARS2gURqMBgH4",
+   "types": [
+   "art_gallery",
+   "tourist_attraction",
+   "museum",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 327
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "84 Ratchadamnoen Ave, Wat Bowon Niwet, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7560263,
+   "lng": 100.5029847
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.75728247989272,
+   "lng": 100.5043168798927
+   },
+   "southwest": {
+   "lat": 13.75458282010728,
+   "lng": 100.5016172201073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+   "icon_background_color": "#13B5C7",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+   "name": "Ratchadamnoen Contemporary Art Center",
+   "opening_hours": {
+   "open_now": true
+   },
+   "photos": [
+   {
+   "height": 1536,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/106406599223447019976\">A Google User</a>"
+   ],
+   "photo_reference": "Aap_uEDdqlNJyG0CzApqFaGGKYUdVvyhljkUijk9AD9lf6NslXmdF2Ptmt3EBaKl8esPuKBugck_hfCBErw7p0312TxYZ1l0q75bN9JhLQvvLrn0lkFr-ElhG_xEkFy-6GtXT-bsaQ-eHvNSs9xP9v3vPjT_ui9LigK9Q-MpUPp_13sOULOs",
+   "width": 2048
+   }
+   ],
+   "place_id": "ChIJN4PkjhSZ4jAR3WolPOGAXxE",
+   "plus_code": {
+   "compound_code": "QG43+C5 Bangkok, Thailand",
+   "global_code": "7P52QG43+C5"
+   },
+   "rating": 4.5,
+   "reference": "ChIJN4PkjhSZ4jAR3WolPOGAXxE",
+   "types": [
+   "art_gallery",
+   "tourist_attraction",
+   "museum",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 499
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "268 Dinso Rd, Sao Chingcha, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.7524102,
+   "lng": 100.5006067
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.75373372989272,
+   "lng": 100.5021359298927
+   },
+   "southwest": {
+   "lat": 13.75103407010728,
+   "lng": 100.4994362701073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_hindu-71.png",
+   "icon_background_color": "#7B9EB0",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_hindu_pinlet",
+   "name": "Devasathan",
+   "photos": [
+   {
+   "height": 2966,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/107635645393095531160\">Supra Chan</a>"
+   ],
+   "photo_reference": "Aap_uEA7oJrdfky1EZFwk3BHXxG1Asm9cGgFuDW4QwQIl6fEzmaVdpFbxHOx_WpV6lqa-a54SdOIr2kWBW8KXz0g6bkkSP-vJhuBMHOC7s89QbUS2nekb6lcM0JtMkwRhrSQcbjcAqzctEkYpwwRoWgQRI8YY4TqD_U17cU4PPcPbbpO350b",
+   "width": 3955
+   }
+   ],
+   "place_id": "ChIJccNQThGZ4jAR5AQAkROwMlM",
+   "plus_code": {
+   "compound_code": "QG22+X6 Bangkok, Thailand",
+   "global_code": "7P52QG22+X6"
+   },
+   "rating": 4.5,
+   "reference": "ChIJccNQThGZ4jAR5AQAkROwMlM",
+   "types": [
+   "hindu_temple",
+   "tourist_attraction",
+   "place_of_worship",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 245
+   },
+   {
+   "business_status": "OPERATIONAL",
+   "formatted_address": "167 Prachathipatai Rd, Ban Phan Thom, Phra Nakhon, Bangkok 10200, Thailand",
+   "geometry": {
+   "location": {
+   "lat": 13.762573,
+   "lng": 100.5027278
+   },
+   "viewport": {
+   "northeast": {
+   "lat": 13.76352827989272,
+   "lng": 100.5043195298927
+   },
+   "southwest": {
+   "lat": 13.76082862010728,
+   "lng": 100.5016198701073
+   }
+   }
+   },
+   "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_dharma-71.png",
+   "icon_background_color": "#7B9EB0",
+   "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+   "name": "Wat Tridhosthep Worawihan",
+   "opening_hours": {
+   "open_now": true
+   },
+   "photos": [
+   {
+   "height": 583,
+   "html_attributions": [
+   "<a href=\"https://maps.google.com/maps/contrib/101553588821398336454\">A Google User</a>"
+   ],
+   "photo_reference": "Aap_uEAK_3zF2PryLDbvi9Nz5IZ9j7xsXbzQW8UWWOgH5LN9H-0VkV_eFjKrBN6WvwB5QnECB7NtLz7bEsGjRRlPAiN6E-cte2hcQbuIWWE8tuVwozNiREhHbXGaEkX0B2c0_gJJJNNDlyLQs7n91KYq2SpzqhBKscFmFtSc3Dcu0CRwaIXF",
+   "width": 1040
+   }
+   ],
+   "place_id": "ChIJA6WfpGuZ4jARGHEeYBQPxb0",
+   "plus_code": {
+   "compound_code": "QG73+23 Bangkok, Thailand",
+   "global_code": "7P52QG73+23"
+   },
+   "rating": 4.4,
+   "reference": "ChIJA6WfpGuZ4jARGHEeYBQPxb0",
+   "types": [
+   "tourist_attraction",
+   "place_of_worship",
+   "point_of_interest",
+   "establishment"
+   ],
+   "user_ratings_total": 1301
+   }
+   ],
+   "status": "OK"
+   }

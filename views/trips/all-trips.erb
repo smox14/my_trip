@@ -1,0 +1,60 @@
+<main>
+  <section class="upcomming_trips">
+    <h2>Upcomming Trips</h2>
+    <ul>
+      <%upcomming_trips.each do |trip| %>
+        <li>
+          <section class='trip'>
+            <a href="/trips/<%= trip['id'] %>/detail">
+              <div class="image">
+                <% unless trip['image_url'].nil? %>
+                  <img src=<%= trip['image_url'] %> alt=""> 
+                <% end %>
+              </div>
+              <h2 class="trip_name"><%= trip['trip_name'] %></h2> 
+              <p class="date"> <%= trip['from_date'] %> to <%= trip['to_date'] %></p>
+            </a>
+            <div class="trip-options">
+              
+              <span class="options">&#65049;</span>
+               <a href="/trips/<%= trip['id'] %>/edit"><button>Edit</button></a> 
+
+              <form action="/trips/<%= trip['id'] %>" method="POST">
+                <input type="hidden" name='_method' value="delete"> 
+                <button>Delete</button>
+              </form>
+            </div>
+          </section>
+        </li>
+      <% end %>
+
+      <li>
+        <section class='trip'>
+          <a href="/trips/new">Add new trip</a>
+        </section>
+      </li>
+      
+    </ul>
+  </section>
+  <hr>
+  <section class="past_trips">
+    <h2>Past Trips</h2>
+    <ul>
+      <%past_trips.each do |trip| %>
+        <li>
+          <section class='trip'>
+            <div class="image">
+              <% unless trip['image_url'].nil? %>
+                <img src=<%= trip['image_url'] %> alt=""> 
+              <% end %>
+            </div>
+            <h2 class="trip_name"><%= trip['trip_name'] %></h2>
+            <p class="date"> <%= trip['from_date'] %> to <%= trip['to_date'] %></p>
+          </section>
+        </li>
+      <% end %>
+
+    </ul>
+  </section>
+
+</main>

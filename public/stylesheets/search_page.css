@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+main {
+  text-align: center;
+  margin-top: 15rem;
+}
+
+h1 {
+  font-size: 4.3em;
+  letter-spacing: -4px;
+  font-weight: 700;
+  font-family: 'Lobster', cursive;
+  margin: 0 auto;    
+}
+
+form{
+  margin: 5rem;
+}
+
+form input{
+  width: 400px;
+}
+
+.bar{
+  margin:0 auto;
+  width:575px;
+  border-radius:30px;
+  border:1px solid #dcdcdc;
+  /* background-color: #fbfbfd; */
+  
+}
+.bar:hover{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+.bar:focus-within{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  outline:none;
+}
+.searchbar{
+  height:45px;
+  border:none;
+  width:500px;
+  font-size:16px;
+  outline: none; 
+  background-color: #fbfbfd;
+}
+
+.search_icon{
+  width: 25px;
+  position:relative;
+  top:7px;
+  left:10px;
+}
+
+.typing {
+  width: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+  /* border-right: 2px solid black; */
+  animation: typing 2s steps(13, end);
+  /* , cursor steps(12, end) .5s infinite */
+}
+@keyframes typing {
+  from { width: 0 }
+}
+@keyframes cursor {
+  50% { border-color: transparent }
+}
+

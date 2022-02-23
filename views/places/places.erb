@@ -1,0 +1,67 @@
+<head><link rel="stylesheet" href="/stylesheets/search_page.css"></head>
+<head><link rel="stylesheet" href="/stylesheets/places.css"></head>
+
+
+<main>
+  <section class="search">
+   <span><h1 class="cssanimation typing">myTrip</h1></span>
+        <form action="/search" method='GET'>
+            <input type="hidden" value= <%= trip_id %>>
+            <div class="bar">
+                <input class="searchbar" type="text" title="Search" name="keyword_search">
+               <input class="search_icon" type="image" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png" alt="Submit Form"/> 
+            </div>
+        </form> 
+  </section>
+
+  <% unless search_result.nil? %>
+    <section class="result">
+      <% if search_result.empty? %>
+        <p>"search not found."</p>
+      <% else %>
+        <section class="search_results">
+          <% search_result.sort_by! { |place| place['rating'] }.reverse! %>
+          <ul>
+            <% search_result.each do |place|%>
+              <li>
+
+                <div class="place">
+                  
+                  <!--
+                  <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=<%= place["photos"][0]["photo_reference"]%>&key=<%= ENV['GOOGLE_API_KEY']%>"/>
+                  -->
+                  
+                  
+                  <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhFDpQMX6wrLn0Nedf5k7k9tLB6eBaztgmBx7XYDose0pDv7lAfCTvb988suo_YKHgT4WXS5MvadTfMHlLDmsAhg" style="width:100%"/>
+                  
+                  <section class="info">
+                    <h2 class='title'><%= place['name']%></h2>
+                    <p class=starts>  
+                      <% place['rating'].to_i.times do %>
+                        <i class="fa-solid fa-star"></i>
+                      <% end %>
+                      <% if place['rating'].to_f % 1 >= 0.5  %>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      <% end %>
+                      <% (5 - place['rating'].to_f.round()).times do %>
+                        <i class="fa-regular fa-star"></i>
+                      <% end %>
+                    </p>
+                    <p><%= place['rating']%> stars out of ( <%= place['user_ratings_total'].to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %> ) reviews. </p>
+                  </section>
+                  <p><button>Add to Trip</button></p>
+                </div>
+                
+              </li>
+            <% end %>
+          </ul>
+        </section>
+      <% end %>    
+    </section> 
+  <% end %>    
+</main>
+
+
+
+
+

@@ -1,0 +1,20 @@
+<main>
+  <h2>Create your new trip</h2>
+  <form action="/trips" method="POST">
+    <input type="hidden" name="user_id" value=<%= session['user_id']%> >
+    <label for=""><b>Trip name </b></label>
+    <input type="text" name="trip_name" required>
+
+    <label for=""><b>Start Trip </b></label>
+    <input type="date" name="from_date" required>
+
+    <label for=""><b>End Trip </b></label>
+    <input type="date" name="to_date" required>
+
+    <label for=""><b>Cover Photo URL:</b></label>
+    <input type="text" name="image_url">
+
+    <button>Creat a new trip</button>
+
+  </form>
+</main>

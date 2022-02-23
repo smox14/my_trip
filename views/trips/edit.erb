@@ -1,0 +1,23 @@
+<main>
+  <h2>Edit Trip: <%= trip_info['trip_name'] %> </h2>
+  <div class="image">
+    <% unless trip_info['image_url'].nil? %>
+      <img src=<%= trip_info['image_url'] %> alt=""> 
+    <% end %>
+  </div>
+
+  <form action="/trips/<%= trip_info['id']%>" method= "POST">
+    <input type="hidden" name="_method" value="put">
+  
+    <label for=""><b>Trip Name </b> </label>
+    <input type="text" name="name" value="<%= trip_info['trip_name']%>">
+    <label for=""><b>Start Trip </b> </label>
+    <input type="date" name="from_date" value="<%= trip_info['from_date'] %>">
+    <label for=""><b>End Trip </b> </label>
+    <input type="date" name="to_date" value="<%= trip_info['to_date'] %>">
+    <label for=""><b>Cover Photo URL </b> </label>
+    <input type="text" name="image_url" value="<%= trip_info['image_url'] %>">
+    
+    <button>submit</button>
+  </form>
+</main>
