@@ -1,6 +1,6 @@
 # myTrip
 
-This project allows user to:
+This project allows user to log in add add, edit and delete trip.
 
 
 ## My plan / approch
