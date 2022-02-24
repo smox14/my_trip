@@ -30,11 +30,16 @@ if(places){
 
 // when user click "save", save user selected places
 if(save_button){
-  save_button.addEventListener('click',function(){
-    
+  save_button.addEventListener('click',() => loadEdit(), false)
+
+}
+
+
+
+async function loadEdit() {
+    // do the await things here.
     selected_places = document.querySelectorAll('.places .added .hidden_info')
     places_info = []
-
     for(var place of selected_places){
       places_info.push({
         place_name: place.children['place_name'].value, 
@@ -55,5 +60,4 @@ if(save_button){
     para.value = json_string_places
     form = document.querySelector("#save_form")
     form.appendChild(para)
-  })
 }

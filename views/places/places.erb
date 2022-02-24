@@ -46,10 +46,17 @@
                   <div class="place place_<%= count %>">
                     <div class="marked hidden">Added</div>
                     <div class="image">
-                      <!--
-                      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=<%= place["photos"][0]["photo_reference"]%>&key=<%= ENV['GOOGLE_API_KEY']%>"/>
-                      -->            
-                      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhFDpQMX6wrLn0Nedf5k7k9tLB6eBaztgmBx7XYDose0pDv7lAfCTvb988suo_YKHgT4WXS5MvadTfMHlLDmsAhg" style="width:100%"/>
+                      
+                      
+                      <% begin %>
+                        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=<%= place["photos"][0]["photo_reference"]%>&key=<%= ENV['GOOGLE_API_KEY']%>"/>
+  
+                      <% rescue => exception %>
+                            <% p "error" %>
+                    
+                            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhFDpQMX6wrLn0Nedf5k7k9tLB6eBaztgmBx7XYDose0pDv7lAfCTvb988suo_YKHgT4WXS5MvadTfMHlLDmsAhg"/>                        
+                    
+                      <% end %>
                     </div>
                     <section class="info">
                       <h2 class='title'><%= place['name']%></h2>
@@ -75,7 +82,15 @@
 
                       <input type="hidden" name="rating" value="<%=  place['rating'] %>" >
                       <input type="hidden" name="user_ratings_total" value="<%=  place['user_ratings_total'] %>" >
-                      <input type="hidden" name="photo_reference" value="<%=  place["photos"][0]["photo_reference"] %>" >
+                      <% begin %>
+                         <input type="hidden" name="photo_reference" value="<%=  place["photos"][0]["photo_reference"] %>" >
+  
+                      <% rescue => exception %>
+                            <% p "error" %>
+                        <input type="hidden" name="photo_reference" value="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhFDpQMX6wrLn0Nedf5k7k9tLB6eBaztgmBx7XYDose0pDv7lAfCTvb988suo_YKHgT4WXS5MvadTfMHlLDmsAhg" >
+                        
+                      <% end %>
+                     
                     </section>
 
                     <p><button>Add to Trip</button></p>

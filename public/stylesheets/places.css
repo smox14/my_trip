@@ -177,5 +177,5 @@
 .places.scroll-down{
   overflow:scroll;
   scroll-behavior: smooth;
-  height: 500px;
+  height: 70vh;
 }

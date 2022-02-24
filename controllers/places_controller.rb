@@ -20,10 +20,12 @@ get '/:id/search' do
   result = search_places(keyword_search)
   
   
+
   erb :'/places/places', locals:{
     trip_info: trip_info,
     search_result: (result["status"] == 'OK')? result['results'] : []
   }
+  
   
 end 
 
