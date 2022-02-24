@@ -13,10 +13,8 @@
   color: white;
   cursor: pointer;
 }
-.title-content h2{
-  font-size: 2rem;
-  font-weight: 600;
-}
+
+
 
 .trips a{
   text-decoration: none;
@@ -51,6 +49,10 @@
   color: white;
   text-align: center;
   margin: 0;
+}
+
+.past-trip{
+  opacity: 0.5; 
 }
 
 ul {
@@ -130,4 +132,14 @@ ul {
 }
 .content{
   margin-bottom: 2rem;
+}
+
+.content li:hover{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+.content.scroll-down{
+  overflow:scroll;
+  scroll-behavior: smooth;
+  height: 655px;
 }

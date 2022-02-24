@@ -1,29 +1,42 @@
 
 
 .trip_header {
-  height: 150px;
+  height: 250px;
   /* border-bottom: rgba(117,139,172,0.5) solid; */
-  text-align: center;
+  
   /* padding-top: 20px; */
   margin-bottom: 2rem;
+  position: relative;
 }
 .trip_header h1{
   font-family: 'Lobster', cursive;
   color: #084a5e;
-  font-size: 3rem;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 0;
+}
+.trip_header h3{
+  
+  /* font-size: 3.5rem; */
+  text-align: center;
+  /* padding-top: 50px;
+  margin-top: 0; */
 }
 
-
-/* .places ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: auto;
+.trip-img-background{
+  position:absolute;
+  z-index: -1;
   width: 100%;
-  justify-content: center;
-} */
+  height: 100%;
+  opacity: 0.3; 
+  filter: blur(5px);
+  object-fit: cover;
+  object-position: center;
+  
+ 
+}
+
 
 .places ul {
   list-style-type: none;
@@ -32,11 +45,14 @@
 }
 
 
+
 .marked{
   width: 250px;
   height: 470px;
   background-color: rgba(250, 250, 250, 0.7);
-  position:absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
   color: gray;
   text-align: center;
   font-size: 2rem;
@@ -69,6 +85,7 @@
   width: 250px;
   margin: 1rem;
   text-align: center;
+  position: relative;
 }
 
 .place .info{
@@ -154,4 +171,11 @@
 /* Show the dropdown menu on hover */
 .options:hover .actions {
   display: block;
+}
+
+
+.places.scroll-down{
+  overflow:scroll;
+  scroll-behavior: smooth;
+  height: 500px;
 }

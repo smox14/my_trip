@@ -4,79 +4,91 @@
 
 
 <main>
-  <section class="search">
-   <span><h1 class="cssanimation typing">myTrip</h1></span>
-        <form action="/<%= trip_id %>/search" method='GET'>
-            
-            <div class="bar">
-                <input class="searchbar" type="text" title="Search" name="keyword_search">
-               <input class="search_icon" type="image" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png" alt="Submit Form"/> 
-            </div>
-        </form> 
-  </section>
-
-  <% unless search_result.nil? %>
-    <section class="result">
-      <% if search_result.empty? %>
-        <p>"search not found."</p>
+  <section class="outer-box">
+    <section class="trip_header">
+      <% unless trip_info['image_url'].nil? || trip_info['image_url'] == "" %>
+          <img src="<%= trip_info['image_url'] %>" alt="" class="trip-img-background"> 
       <% else %>
-        <form action="/<%= trip_id %>/places" id="save_form" method="POST">
-          
-          <div class="save-btn"><button>Save</button></div>
-        </form>
+          <img src="https://images.unsplash.com/photo-1603729287771-e03b8ac6ebf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3271&q=80" alt="" class="trip-img-background"> 
+      <% end %>
 
-        <section class="places search_results">
-          <% search_result.sort_by! { |place| place['rating'] }.reverse! %>
-          <ul>
-            <% count = 1%>
-            <% search_result.each do |place|%>
-              <li>
+      <h1><%= trip_info['trip_name']%></h1>  
+      <h3><%= Date.parse(trip_info['from_date']).strftime('%d %b %Y') %> <strong> - </strong> <%= Date.parse( trip_info['to_date'] ).strftime('%d %b %Y') %> </h3>
+    </section>
+    
+    <section class="search">
+        
+          <form action="/<%= trip_info['id'] %>/search" method='GET'>
+              <div class="bar">
+                  <input class="searchbar" type="text" title="Search" name="keyword_search" placeholder= "Place where I want to explore . . .">
+                <input class="search_icon" type="image" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png" alt="Submit Form"/> 
+              </div>
+          </form> 
+    </section>
 
-                <div class="place place_<%= count %>">
-                  <div class="marked hidden">Added</div>
-                  <div class="image">
-                    <!--
-                    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=<%= place["photos"][0]["photo_reference"]%>&key=<%= ENV['GOOGLE_API_KEY']%>"/>
-                    -->            
-                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhFDpQMX6wrLn0Nedf5k7k9tLB6eBaztgmBx7XYDose0pDv7lAfCTvb988suo_YKHgT4WXS5MvadTfMHlLDmsAhg" style="width:100%"/>
+    <% unless search_result.nil? %>
+      <section class="result">
+        <% if search_result.empty? %>
+          <p>"search not found."</p>
+        <% else %>
+          <form action="/<%= trip_info['id'] %>/places" id="save_form" method="POST">
+            
+            <div class="save-btn"><button>Save</button></div>
+          </form>
+
+          <section class="places search_results scroll-down">
+            <% search_result.sort_by! { |place| place['rating'] }.reverse! %>
+            <ul>
+              <% count = 1%>
+              <% search_result.each do |place|%>
+                <li>
+
+                  <div class="place place_<%= count %>">
+                    <div class="marked hidden">Added</div>
+                    <div class="image">
+                      <!--
+                      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=<%= place["photos"][0]["photo_reference"]%>&key=<%= ENV['GOOGLE_API_KEY']%>"/>
+                      -->            
+                      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhFDpQMX6wrLn0Nedf5k7k9tLB6eBaztgmBx7XYDose0pDv7lAfCTvb988suo_YKHgT4WXS5MvadTfMHlLDmsAhg" style="width:100%"/>
+                    </div>
+                    <section class="info">
+                      <h2 class='title'><%= place['name']%></h2>
+                      <p class=starts>  
+                        <% place['rating'].to_i.times do %>
+                          <i class="fa-solid fa-star"></i>
+                        <% end %>
+                        <% if place['rating'].to_f % 1 >= 0.5  %>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        <% end %>
+                        <% (5 - place['rating'].to_f.round()).times do %>
+                          <i class="fa-regular fa-star"></i>
+                        <% end %>
+                      </p>
+                      <p><%= place['rating']%> stars out of ( <%= place['user_ratings_total'].to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %> ) reviews. </p>
+                    </section>
+                    <section class='hidden_info'>
+                      <input type="hidden" name="place_name" value="<%= place['name'] %>" >
+                      <input type="hidden" name="google_place_id" value="<%= place['place_id'] %>" >
+                      <input type="hidden" name="latitudes" value="<%= place['geometry']['location']['lat'] %>" >
+                      <input type="hidden" name="longitudes" value="<%= place['geometry']['location']['lng'] %>" >
+                      <input type="hidden" name="formatted_address" value="<%=  place['formatted_address'] %>" >
+
+                      <input type="hidden" name="rating" value="<%=  place['rating'] %>" >
+                      <input type="hidden" name="user_ratings_total" value="<%=  place['user_ratings_total'] %>" >
+                      <input type="hidden" name="photo_reference" value="<%=  place["photos"][0]["photo_reference"] %>" >
+                    </section>
+
+                    <p><button>Add to Trip</button></p>
                   </div>
-                  <section class="info">
-                    <h2 class='title'><%= place['name']%></h2>
-                    <p class=starts>  
-                      <% place['rating'].to_i.times do %>
-                        <i class="fa-solid fa-star"></i>
-                      <% end %>
-                      <% if place['rating'].to_f % 1 >= 0.5  %>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                      <% end %>
-                      <% (5 - place['rating'].to_f.round()).times do %>
-                        <i class="fa-regular fa-star"></i>
-                      <% end %>
-                    </p>
-                    <p><%= place['rating']%> stars out of ( <%= place['user_ratings_total'].to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %> ) reviews. </p>
-                  </section>
-                  <section class='hidden_info'>
-                    <input type="hidden" name="place_name" value="<%= place['name'] %>" >
-                    <input type="hidden" name="google_place_id" value="<%= place['place_id'] %>" >
-                    <input type="hidden" name="latitudes" value="<%= place['geometry']['location']['lat'] %>" >
-                    <input type="hidden" name="longitudes" value="<%= place['geometry']['location']['lng'] %>" >
-                    <input type="hidden" name="formatted_address" value="<%=  place['formatted_address'] %>" >
-
-                    <input type="hidden" name="rating" value="<%=  place['rating'] %>" >
-                    <input type="hidden" name="user_ratings_total" value="<%=  place['user_ratings_total'] %>" >
-                    <input type="hidden" name="photo_reference" value="<%=  place["photos"][0]["photo_reference"] %>" >
-                  </section>
-
-                  <p><button>Add to Trip</button></p>
-                </div>
-              </li>
-              <% count += 1%>
-            <% end %>
-          </ul>
-        </section>
-      <% end %>    
-    </section> 
-  <% end %>    
+                </li>
+                <% count += 1%>
+              <% end %>
+            </ul>
+          </section>
+        <% end %>    
+      </section> 
+    <% end %>   
+  </section>   
 </main>
 
 <script src="/javascripts/places.js"></script>

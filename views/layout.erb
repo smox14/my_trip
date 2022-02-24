@@ -7,14 +7,16 @@
 <script src="https://kit.fontawesome.com/99008ce47c.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="#">
-  
+  <link rel="icon" href="/images/myTrip.png" type="image/icon type">
   <title>myTrip</title>
   <link rel='stylesheet' href='/stylesheets/main.css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header class="sticky">
-    <img src="/images/myTrip.png" alt="" class="logo-header">
+  <a href="/">
+    <img src="/images/myTrip.png" alt="" class="logo-header"> 
+  </a>
     <% if signed_in? %>
         <!--<h3><%= current_user()['username']%></h3>
         <form action="/sessions" method="POST">

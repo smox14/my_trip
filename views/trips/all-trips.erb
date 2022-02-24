@@ -12,7 +12,7 @@
           </section>
       </section>
       <hr>
-      <section class="content">
+      <section class="content scroll-down">
         <ul>
           <%upcomming_trips.each do |trip| %>
             <li>
@@ -37,9 +37,8 @@
                   <div class="image">
                     <% unless trip['image_url'].nil? || trip['image_url'] == "" %>
                       <img src="<%= trip['image_url'] %>" alt=""> 
-                    <% else %>
-                      <p>image</p>
-                      
+                    <% else %>     
+                      <img src="https://images.unsplash.com/photo-1603729287771-e03b8ac6ebf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3271&q=80" alt=""> 
                     <% end %>
                   </div>
                   
@@ -64,20 +63,21 @@
      </section> 
      <hr>
 
-     <section class="content">
+     <section class="content scroll-down">
         <ul>
           <%past_trips.each do |trip| %>
            <li>
-              <section class='trip'>
+              <section class='trip past-trip'>
 
                 <div class="options">  
                   <button class="options_button">&#65049;</button>
                   <div class="actions">
                     
+                    <!--
                     <form action="/trips/<%= trip['id'] %>/edit" >
                       <input type="submit" value="Edit">
                     </form>
-
+                    -->
                     <form action="/trips/<%= trip['id'] %>" method="POST">
                       <input type="hidden" name='_method' value="delete"> 
                       <input type="submit" value="Remove">
@@ -90,8 +90,7 @@
                     <% unless trip['image_url'].nil? || trip['image_url'] == "" %>
                       <img src="<%= trip['image_url'] %>" alt=""> 
                     <% else %>
-                      <p>image</p>
-                      
+                      <img src="https://images.unsplash.com/photo-1603729287771-e03b8ac6ebf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3271&q=80" alt="">   
                     <% end %>
                   </div>
                   

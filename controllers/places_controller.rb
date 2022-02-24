@@ -1,9 +1,10 @@
 get '/:id/places' do 
   redirect '/' unless signed_in?
-  trip_id = params['id']
+  trip_id = params['id'].to_i
+  trip_info = get_trip(trip_id)[0]
   
   erb :'/places/places', locals:{
-    trip_id: trip_id,
+    trip_info: trip_info,
     search_result: nil
   }
   
@@ -14,14 +15,16 @@ get '/:id/search' do
 
   trip_id = params['id']
   keyword_search = params['keyword_search'] || ""
+  
+  trip_info = get_trip(trip_id)[0]
   result = search_places(keyword_search)
   
-
+  
   erb :'/places/places', locals:{
-    trip_id: trip_id,
+    trip_info: trip_info,
     search_result: (result["status"] == 'OK')? result['results'] : []
   }
-
+  
 end 
 
 post '/:id/places' do

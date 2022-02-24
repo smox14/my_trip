@@ -1,20 +1,33 @@
+<head>
+  <link rel="stylesheet" href="/stylesheets/trips.css">
+  <link rel="stylesheet" href="/stylesheets/edit.css">
+</head>
+
 <main>
-  <h2>Create your new trip</h2>
-  <form action="/trips" method="POST">
-    <input type="hidden" name="user_id" value=<%= session['user_id']%> >
-    <label for=""><b>Trip name </b></label>
-    <input type="text" name="trip_name" required>
+  <section class="outer-box">
+    <section class="title-content">
+      <h2>Create your new trip</h2>
+    </section>
+    <hr>
 
-    <label for=""><b>Start Trip </b></label>
-    <input type="date" name="from_date" required>
+    <section class="edit-content">
+      <form action="/trips" method="POST">
+        <input type="hidden" name="user_id" value=<%= session['user_id']%> >
+        <label for=""><p class="text">Trip name </p></label>
+        <input type="text" name="trip_name" required>
 
-    <label for=""><b>End Trip </b></label>
-    <input type="date" name="to_date" required>
+        <label for=""><p class="text">Start Trip </p></label>
+        <input type="date" name="from_date" required>
 
-    <label for=""><b>Cover Photo URL:</b></label>
-    <input type="text" name="image_url">
+        <label for=""><p class="text">End Trip </p></label>
+        <input type="date" name="to_date" required>
 
-    <button>Creat a new trip</button>
+        <label for=""><p class="text">Cover Photo URL:</p></label>
+        <input type="text" name="image_url">
+        <br>
+        <button>Creat a new trip</button>
 
-  </form>
+      </form>
+    </section>
+  </section>
 </main>

@@ -1,5 +1,6 @@
 form{
   padding: 1rem;
+  
 }
 p{
   font-size: 1.3em;
@@ -14,7 +15,7 @@ input{
   font-size: 1rem;
 }
 
-button{
+.edit-content button{
   margin-top: 2rem;
   width: 30%;
   height: 35px;
