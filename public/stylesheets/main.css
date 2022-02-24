@@ -1,18 +1,60 @@
-html {
-  height: 100%;
-  margin: auto;
-  width: 960px;
+ * {
+  box-sizing:border-box;
+} 
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
 }
+
+.main_page{
+  background-image: url("https://images.unsplash.com/photo-1603729287771-e03b8ac6ebf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3271&q=80");
+  /* background-color: #4CAF50; */
+  height: 93vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+}
+
+
+.main_page .sentece_1{
+  padding-top: 30vh;
+  margin: 0;
+}
+
+.main_page .brand{
+  font-family: 'Lobster', cursive;
+  font-size: 13vh;
+  margin: 0;
+}
+
+main h3{
+  font-family: 'Lato', sans-serif;
+  color: rgb(39, 39, 48);
+}
+
+
 
 /****** Header - account logged in ******/
 /* Style The Dropdown Button */
+
+header{
+  background-color: #619ea3; /*a2c1bd*/
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #619ea3;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  
+  padding-right: 2rem;
 }
 .dropbtn a{
   color: white;
@@ -32,6 +74,7 @@ html {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  right: 0;
 }
 
 /* Links inside the dropdown */
@@ -56,8 +99,17 @@ html {
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.dropdown:hover .dropbtn a {
+  /* background-color: #619ea3; */
+  color:#084a5e;
+  background-color: #ddd; 
+}
+
+.dropdown:hover .dropbtn{
+  /* background-color: #619ea3; */
+  /* color:#084a5e; */
+  /* background-color: #ddd; */
+  
 }
 
 .dropdown form{

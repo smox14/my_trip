@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap" rel="stylesheet">
+
 <script src="https://kit.fontawesome.com/99008ce47c.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <title>Hello World</title>
@@ -13,6 +12,7 @@
 </head>
 <body>
   <header>
+    
     <% if signed_in? %>
         <!--<h3><%= current_user()['username']%></h3>
         <form action="/sessions" method="POST">
@@ -20,7 +20,7 @@
             <button>Logout</button>
         </form> -->
         <div class="dropdown">
-          <button class="dropbtn">Hi <%= current_user()['username']%></button>
+          <button class="dropbtn"> <strong><%= current_user()['username'].upcase%><strong></button>
           <div class="dropdown-content">
             <form action="/trips/new" method="get">
               <input type="submit" value="Add new trip" />

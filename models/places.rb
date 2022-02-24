@@ -16,4 +16,7 @@ def search_places(place)
   search_result
 end 
 
-# binding.pry
+def get_places_from_trip_id(trip_id)
+  results = run_sql("SELECT * FROM places WHERE trip_id = $1;",[trip_id])
+  results
+end

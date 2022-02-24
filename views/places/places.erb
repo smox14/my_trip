@@ -19,21 +19,25 @@
       <% if search_result.empty? %>
         <p>"search not found."</p>
       <% else %>
-        <section class="search_results">
+        <form action="">
+          <button>Save</button>
+        </form>
+
+        <section class="places search_results">
           <% search_result.sort_by! { |place| place['rating'] }.reverse! %>
           <ul>
+            <% count = 1%>
             <% search_result.each do |place|%>
               <li>
 
-                <div class="place">
-                  
-                  <!--
-                  <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=<%= place["photos"][0]["photo_reference"]%>&key=<%= ENV['GOOGLE_API_KEY']%>"/>
-                  -->
-                  
-                  
-                  <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhFDpQMX6wrLn0Nedf5k7k9tLB6eBaztgmBx7XYDose0pDv7lAfCTvb988suo_YKHgT4WXS5MvadTfMHlLDmsAhg" style="width:100%"/>
-                  
+                <div class="place place_<%= count %>">
+                  <div class="marked hidden">Added</div>
+                  <div class="image">
+                    <!--
+                    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=<%= place["photos"][0]["photo_reference"]%>&key=<%= ENV['GOOGLE_API_KEY']%>"/>
+                    -->            
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhFDpQMX6wrLn0Nedf5k7k9tLB6eBaztgmBx7XYDose0pDv7lAfCTvb988suo_YKHgT4WXS5MvadTfMHlLDmsAhg" style="width:100%"/>
+                  </div>
                   <section class="info">
                     <h2 class='title'><%= place['name']%></h2>
                     <p class=starts>  
@@ -49,10 +53,13 @@
                     </p>
                     <p><%= place['rating']%> stars out of ( <%= place['user_ratings_total'].to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %> ) reviews. </p>
                   </section>
+                  <section class='hidden_info'>
+                    <input type="hidden" name="place_name" value="<%= place['name'] %>" >
+                  </section>
                   <p><button>Add to Trip</button></p>
                 </div>
-                
               </li>
+              <% count += 1%>
             <% end %>
           </ul>
         </section>
@@ -61,7 +68,7 @@
   <% end %>    
 </main>
 
-
+<script src="/javascripts/places.js"></script>
 
 
 

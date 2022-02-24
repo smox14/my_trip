@@ -32,5 +32,5 @@ def update_trip(trip_name, from_date, to_date, image_url, trip_id)
 end 
 
 def delete_trip(trip_id)
-  run_sql("DELETE FROM trips WHERE trip_id = $1;", [trip_id])
+  run_sql("DELETE FROM trips WHERE id = $1;", [trip_id])
 end  

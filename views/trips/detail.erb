@@ -1,3 +1,5 @@
+<head><link rel="stylesheet" href="/stylesheets/places.css"></head>
+
 <header>
   <h1><%= trip_info['trip_name']%></h1>
   <h3><%= trip_info['from_date']%> to <%= trip_info['to_date']%> </h3>
@@ -5,5 +7,44 @@
 
 <main>
     <h2>Places to visit</h2>
-    <a href="/<%= trip_info['id']%>/places"> <button>add</button> </a>
+    <a href="/<%= trip_info['id']%>/places"><button>add</button> </a>
+    <% unless places.nil? %> 
+
+      <section class="places">
+        <ul>
+          <% places.each do |place|%>
+            <li>
+              <div class="place">
+                <div class="image">
+                  <!--
+                  <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=<%= place["photo_reference"]%>&key=<%= ENV['GOOGLE_API_KEY']%>"/>
+                  -->            
+                  <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhFDpQMX6wrLn0Nedf5k7k9tLB6eBaztgmBx7XYDose0pDv7lAfCTvb988suo_YKHgT4WXS5MvadTfMHlLDmsAhg" style="width:100%"/>
+                </div>
+                
+                <section class="info">
+                  <h2 class='title'><%= place['place_name']%></h2>
+                  <p class=starts>  
+                    <% place['rating'].to_i.times do %>
+                      <i class="fa-solid fa-star"></i>
+                    <% end %>
+                    <% if place['rating'].to_f % 1 >= 0.5  %>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    <% end %>
+                    <% (5 - place['rating'].to_f.round()).times do %>
+                      <i class="fa-regular fa-star"></i>
+                    <% end %>
+                  </p>
+                  <p><%= place['rating']%> stars out of ( <%= place['user_ratings_total'].to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %> ) reviews. </p>
+                </section>
+                
+                <p><button>Add to Trip</button></p>
+              </div>
+            </li>
+          <% end %>      
+        </ul>
+      </section>
+    <% end %>
+
+  
 </main>

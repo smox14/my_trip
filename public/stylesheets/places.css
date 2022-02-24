@@ -1,10 +1,24 @@
-.search_results ul {
+.places ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
 
 
+.marked{
+  width: 250px;
+  height: 470px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position:absolute;
+  color: gray;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 200px;
+}
+
+.hidden{
+  display: none;
+}
 
 /* li a {
   display: block;
@@ -53,6 +67,7 @@
   width: 100%;
   font-size: 18px;
 }
+
 
 .place a {
   text-decoration: none;
