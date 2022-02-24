@@ -5,8 +5,8 @@
 <main>
   <section class="search">
    <span><h1 class="cssanimation typing">myTrip</h1></span>
-        <form action="/search" method='GET'>
-            <input type="hidden" value= <%= trip_id %>>
+        <form action="/<%= trip_id %>/search" method='GET'>
+            
             <div class="bar">
                 <input class="searchbar" type="text" title="Search" name="keyword_search">
                <input class="search_icon" type="image" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png" alt="Submit Form"/> 
@@ -19,8 +19,9 @@
       <% if search_result.empty? %>
         <p>"search not found."</p>
       <% else %>
-        <form action="">
-          <button>Save</button>
+        <form action="/<%= trip_id %>/places" id="save_form" method="POST">
+          
+          <div class="save-btn"><button>Save</button></div>
         </form>
 
         <section class="places search_results">
@@ -55,7 +56,16 @@
                   </section>
                   <section class='hidden_info'>
                     <input type="hidden" name="place_name" value="<%= place['name'] %>" >
+                    <input type="hidden" name="google_place_id" value="<%= place['place_id'] %>" >
+                    <input type="hidden" name="latitudes" value="<%= place['geometry']['location']['lat'] %>" >
+                    <input type="hidden" name="longitudes" value="<%= place['geometry']['location']['lng'] %>" >
+                    <input type="hidden" name="formatted_address" value="<%=  place['formatted_address'] %>" >
+
+                    <input type="hidden" name="rating" value="<%=  place['rating'] %>" >
+                    <input type="hidden" name="user_ratings_total" value="<%=  place['user_ratings_total'] %>" >
+                    <input type="hidden" name="photo_reference" value="<%=  place["photos"][0]["photo_reference"] %>" >
                   </section>
+
                   <p><button>Add to Trip</button></p>
                 </div>
               </li>

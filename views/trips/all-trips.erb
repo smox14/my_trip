@@ -8,7 +8,7 @@
             <a href="/trips/<%= trip['id'] %>/detail">
               <div class="image">
                 <% unless trip['image_url'].nil? %>
-                  <img src=<%= trip['image_url'] %> alt=""> 
+                  <img src="<%= trip['image_url'] %>" alt=""> 
                 <% end %>
               </div>
               <h2 class="trip_name"><%= trip['trip_name'] %></h2> 
@@ -45,7 +45,7 @@
           <section class='trip'>
             <div class="image">
               <% unless trip['image_url'].nil? %>
-                <img src=<%= trip['image_url'] %> alt=""> 
+                <img src="<%= trip['image_url'] %>" > 
               <% end %>
             </div>
             <h2 class="trip_name"><%= trip['trip_name'] %></h2>

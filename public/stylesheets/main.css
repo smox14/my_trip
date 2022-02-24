@@ -5,16 +5,17 @@ body{
   margin: 0;
   padding: 0;
   background-color: #fff;
+  font-family: 'Lato', sans-serif;
 }
+
 
 .main_page{
   background-image: url("https://images.unsplash.com/photo-1603729287771-e03b8ac6ebf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3271&q=80");
   /* background-color: #4CAF50; */
-  height: 93vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   text-align: center;
-  
 }
 
 
@@ -40,21 +41,28 @@ main h3{
 /* Style The Dropdown Button */
 
 header{
-  background-color: #619ea3; /*a2c1bd*/
+  background-color: rgba(97, 158, 163,0.8); /*a2c1bd*/
+  /* position: fixed; */
   display: flex;
   justify-content: flex-end;
-  
+  z-index: 1;
+}
+.sticky {
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
 }
 
 .dropbtn {
-  background-color: #619ea3;
+  background-color: rgba(97, 158, 163,0);
   color: white;
-  padding: 16px;
+  padding: 15px;
   font-size: 16px;
   border: none;
   cursor: pointer;
   
   padding-right: 2rem;
+  padding-left: 2rem;
 }
 .dropbtn a{
   color: white;
@@ -102,15 +110,10 @@ header{
 .dropdown:hover .dropbtn a {
   /* background-color: #619ea3; */
   color:#084a5e;
-  background-color: #ddd; 
+  /* background-color: #ddd;  */
 }
 
-.dropdown:hover .dropbtn{
-  /* background-color: #619ea3; */
-  /* color:#084a5e; */
-  /* background-color: #ddd; */
-  
-}
+
 
 .dropdown form{
   padding:0;

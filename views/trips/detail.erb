@@ -1,13 +1,13 @@
 <head><link rel="stylesheet" href="/stylesheets/places.css"></head>
 
-<header>
-  <h1><%= trip_info['trip_name']%></h1>
-  <h3><%= trip_info['from_date']%> to <%= trip_info['to_date']%> </h3>
-</header>
-
 <main>
+  <section class="trip_header">
+    <h1><%= trip_info['trip_name']%></h1>
+    
+    <h3><%= Date.parse(trip_info['from_date']).strftime('%d %b %Y') %> <strong> - </strong> <%= Date.parse( trip_info['to_date'] ).strftime('%d %b %Y') %> </h3>
+  </section>
     <h2>Places to visit</h2>
-    <a href="/<%= trip_info['id']%>/places"><button>add</button> </a>
+    <a href="/<%= trip_info['id']%>/places?"><button>add</button> </a>
     <% unless places.nil? %> 
 
       <section class="places">
@@ -15,6 +15,15 @@
           <% places.each do |place|%>
             <li>
               <div class="place">
+                 <div class="more"><button class="more-delete">&#65049;</button>
+                 <div class="more-content">
+                  <form action="/<%= trip_info['id']%>/delete" method="POST">
+                    <input type="hidden" name='_method' value="delete"> 
+                    <input type="hidden" name='place_id' value="<%= place['id'] %>"> 
+                    <input type="submit" value="Remove">
+                  </form>
+                 </div>
+                 </div> 
                 <div class="image">
                   <!--
                   <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=<%= place["photo_reference"]%>&key=<%= ENV['GOOGLE_API_KEY']%>"/>
@@ -38,7 +47,6 @@
                   <p><%= place['rating']%> stars out of ( <%= place['user_ratings_total'].to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %> ) reviews. </p>
                 </section>
                 
-                <p><button>Add to Trip</button></p>
               </div>
             </li>
           <% end %>      

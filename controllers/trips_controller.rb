@@ -51,19 +51,20 @@ end
 
 delete '/trips/:id' do
   trip_id = params['id'].to_i
-  p trip_id
+  
+  delete_place_from_trip_id(trip_id)
   delete_trip(trip_id)
+  
   redirect '/trips' 
 end
 
 get '/trips/:id/detail' do
   redirect '/' unless signed_in?
-  
+
   trip_id = params['id'].to_i
   trip_info = get_trip(trip_id)[0]
   places = get_places_from_trip_id(trip_id)
-  # p places
-  # binding.pry
+  
   erb :'trips/detail', locals:{
     trip_info: trip_info,
     places: places
