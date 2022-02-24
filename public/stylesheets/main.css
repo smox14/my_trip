@@ -6,8 +6,8 @@ body{
   padding: 0;
   background-color: #fff;
   font-family: 'Lato', sans-serif;
+  
 }
-
 
 .main_page{
   background-image: url("https://images.unsplash.com/photo-1603729287771-e03b8ac6ebf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3271&q=80");
@@ -17,7 +17,6 @@ body{
   background-position: center;
   text-align: center;
 }
-
 
 .main_page .sentece_1{
   padding-top: 30vh;
@@ -30,7 +29,8 @@ body{
   margin: 0;
 }
 
-main h3{
+
+.main_page h3{
   font-family: 'Lato', sans-serif;
   color: rgb(39, 39, 48);
 }
@@ -39,6 +39,13 @@ main h3{
 
 /****** Header - account logged in ******/
 /* Style The Dropdown Button */
+img.logo-header{
+  /* width: 100px; */
+  height: 50px;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+}
 
 header{
   background-color: rgba(97, 158, 163,0.8); /*a2c1bd*/
@@ -124,3 +131,13 @@ header{
 }
 
 /****** End Header - account logged in ******/
+
+.outer-box{
+  max-width: 1000px;
+  min-height: 100vh;
+  
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}

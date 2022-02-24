@@ -7,20 +7,24 @@
 <script src="https://kit.fontawesome.com/99008ce47c.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="#">
+  
   <title>myTrip</title>
   <link rel='stylesheet' href='/stylesheets/main.css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header class="sticky">
-    
+    <img src="/images/myTrip.png" alt="" class="logo-header">
     <% if signed_in? %>
         <!--<h3><%= current_user()['username']%></h3>
         <form action="/sessions" method="POST">
             <input type="hidden" name='_method' value="delete">
             <button>Logout</button>
         </form> -->
+
+        
         <div class="dropdown">
+      
           <button class="dropbtn"> <strong><%= current_user()['username'].upcase%><strong></button>
           <div class="dropdown-content">
             <form action="/trips/new" method="get">

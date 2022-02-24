@@ -1,17 +1,11 @@
-main{
-  max-width: 1000px;
-  /* height: 100vh; */
-  
-  margin: 0 auto;
-  padding: 1rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+
 
 .trip_header {
   height: 150px;
-  border-bottom: rgba(117,139,172,0.5) solid;
+  /* border-bottom: rgba(117,139,172,0.5) solid; */
   text-align: center;
   /* padding-top: 20px; */
+  margin-bottom: 2rem;
 }
 .trip_header h1{
   font-family: 'Lobster', cursive;
@@ -113,12 +107,12 @@ main{
 }
 
 
-.more{
+.options{
   position: relative; 
   /* display: inline-block; */
   /* float: right; */
 }
-.more button.more-delete{
+.options button.options_button{
   /* position: absolute;  */
   
   /* right: 0px;  */
@@ -129,7 +123,7 @@ main{
   right: 0px;
 }
 
-.more-content {
+.actions {
   display: none;
   position: absolute;
   /* background-color: rgba(249, 249, 249,1); */
@@ -139,7 +133,7 @@ main{
   top: 30px;
   right: -80px;
 }
-.more-content form input {
+.actions form input {
   color: black;
   background-color: rgba(249, 249, 249,0.3);
   padding: 12px 16px;
@@ -151,12 +145,13 @@ main{
   border: none;
 }
 /* Change color of dropdown links on hover */
-.more-content input:hover {
+.actions input:hover {
   background-color: rgba(249, 249, 249,0.7);
   font-weight: 600;
+  color: blue;
 }
 
 /* Show the dropdown menu on hover */
-.more:hover .more-content {
+.options:hover .actions {
   display: block;
 }

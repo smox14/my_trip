@@ -1,22 +1,31 @@
-<section class="signup_form">
-  <h1>Join myTrip</h1>
-  <form action="/users" method="post">
-    
-    <section class='user_form'>
-      <label for=""><b>Username</b></label>
-      <br>
-      <input type="text" placeholder="Username" name="username" required>
-      <br>
-      <label for=""><b>Email</b></label>
-      <br>
-      <input type="text" placeholder="Email" name="email" required>
-      <br>
-      <label for=""><b>Password</b></label>
-      <br>
-      <input type="password" placeholder="Password" name="password" required>
-      <br>
-      <button type="submit">Sign Up</button>
-    </section>
-  </form>
-   <p>Already have an account? <a href="/sign-in">Sign in</a></p> 
+<link rel='stylesheet' href='/stylesheets/session.css'>
+
+<section class="outer-box">
+  <section class="sign-up-page user-form-section" >
+    <h1>Join <span><img src="/images/myTrip.png" alt="" class="logo"></span></h1>
+
+    <form action="/users" method="POST">  
+      <section class='form'>
+
+        <label for=""><p class="text">Username</p></label>
+        <br>
+        <input type="text" placeholder="Username" name="username" required>
+        <br><br>
+        <label for=""><p class="text">Email</p></label>
+        <br>
+        <input type="text" placeholder="Email" name="email" required>
+        <br><br>
+        <label for=""><p class="text">Password</p></label>
+        <br>
+        <input type="password" placeholder="Password" name="password" required>
+        <br><br>
+        <button type="submit">Sign Up</button>
+      </section>
+      
+      <hr>
+      <div class="user-form-footer">
+      <p>Already have an account? <a href="/sign-in">Sign in</a></p> 
+      </div>
+    </form>
+  </section>
 </section>

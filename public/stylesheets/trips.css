@@ -1,0 +1,133 @@
+.title-content{
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.title-content button{
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  box-shadow: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.title-content h2{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.trips a{
+  text-decoration: none;
+  color: black;
+}
+.trips li{
+  /* border: 1px black solid; */
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 250px;
+  padding: 10px;
+}
+
+.trips img{
+  width: 100%;
+  height: 151px;
+  background-size: cover;
+
+  background-color: gray;
+  color: black;
+}
+
+.trips div.image{
+  width: 228px;
+  height: 151px;
+  background-color: lightgrey;
+}
+
+.trips div.image p{
+  font-size: 50px;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.options{
+  position: relative;
+  border: none; 
+  /* display: inline-block; */
+  /* float: right; */
+  z-index: 1;
+  cursor: pointer;
+}
+
+.options button.options_button{
+  background: none;
+  color: black;
+  position: absolute;
+  width: fit-content;
+  right: 0px;
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+.actions {
+  display: none;
+  position: absolute;
+  
+  width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+  top: 20px;
+  right: -90px;
+  background-color: rgba(249, 249, 249,0.3);
+}
+
+.actions button{
+  /* display: none; */
+  color: black;
+  background-color: rgba(249, 249, 249,0.3);
+  border: none;
+  width: 100%;
+}
+
+.actions form input {
+  color: black;
+  background-color: rgba(249, 249, 249,0.3);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0;
+  border: none;
+} 
+
+/* Change color of dropdown links on hover */
+.actions input:hover {
+  background-color: rgba(249, 249, 249,0.7);
+  font-weight: 600;
+  color: blue;
+}
+
+/* Show the dropdown menu on hover */
+.options:hover .actions {
+  display: block;
+}
+
+.title-content button:hover {
+  font-weight: 600;
+}
+.content{
+  margin-bottom: 2rem;
+}

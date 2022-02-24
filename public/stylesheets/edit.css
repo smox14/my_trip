@@ -1,0 +1,26 @@
+form{
+  padding: 1rem;
+}
+p{
+  font-size: 1.3em;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+input{
+  width: 30%;
+  height: 30px;
+  padding: 0 5px;
+  font-size: 1rem;
+}
+
+button{
+  margin-top: 2rem;
+  width: 30%;
+  height: 35px;
+  
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
