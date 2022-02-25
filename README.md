@@ -1,8 +1,8 @@
 # myTrip
-Part of 
+
 Try Demo --> <a href="https://thawing-sea-42605.herokuapp.com/"> Here </a>
 
-This project allows user to log in add add, edit and delete trip.
+This project allows user to log in add add, edit and delete trip and places.
 
 
 ## My plan / approch
