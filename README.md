@@ -16,7 +16,7 @@ This project allows user to log in add add, edit and delete trip.
 - Bcrypt
 - Httparty
 - Google API
-- 
+
 ## Lessons you learned 
 
 ## Features to add in the future
